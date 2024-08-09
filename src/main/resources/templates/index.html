@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ecommerce</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-[url('/src/main/resources/static/bg1.jpg')] bg-centre bg-cover px-28 py-5">
+        <div>
+            <nav class="flex items-centre">
+                <h2 class="text-white text-3xl font-bold pr-5 ">FurnitureZone</h2>
+                <ul class="flex-1 text-centre ">
+                    <li class="list-none inline-block px-5 "><a th:href="@{/}" class="text-white no-underline px-2 font-semibold">Home</a></li>
+                    <li class="list-none inline-block px-5 "><a th:href="@{/register}" class="text-white no-underline px-2 font-semibold">Register</a></li>
+                    <li class="list-none inline-block px-5 "><a th:href="@{/login}" class="text-white no-underline px-2 font-semibold">Login</a></li>
+                    <li class="list-none inline-block px-5 "><a th:href="@{/products}" class="text-white no-underline px-2 font-semibold">Products</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="backdrop-blur-md ">
+            <div class="text-white mt-48 mx-w-xl">
+                <h1 class="text-6xl font-semibold leading-normal">Furniture available<br>Delivery countrywide</h1>
+                <p>FurnitureZone offers a wide range of products including dining sets, office chairs, gaming chairs, beds, study table and more</p>
+                <div class="mt-10">
+                    <a th:href="@{/products}" class="bg-violet-700 rounded-3xl px-8 py-3 font-medium inline-block hover:bg-violet-500 hover:border-violet-700 hover:text-white duration-300 hover:border border border-transparent">Order now</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
