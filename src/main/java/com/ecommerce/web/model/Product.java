@@ -4,17 +4,15 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
+@Table(name = "Product")
 @Data
-@Table(name = "users")
-public class User {
-
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, unique = true)
-    private String username;
-
-    @Column(nullable = false)
-    private String password;
+    private String name;
+    private String description;
+    private Double price;
+    private String imageUrl;
 }

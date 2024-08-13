@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+      <meta charset="UTF-8">
+      <title>Ecommerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+  <body class="bg-gray-800 px-28 h-screen pl-70 md">
+      <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+        <div class="bg-stone-700 py-8 px-6 shadow rounded-lg sm:px-10 w-80">
+          <form th:action="@{/login}" th:object="${user}" method="post">
+            <h1 class="font-bold text-3xl px-10 mb-2 text-white">Login</h1>
+            <hr class="mb-3">
+            <div>
+              <label for="username" class="block text-2xl text-white mb-1">Username</label>
+              <input type="text" id="username" th:field="*{username}" placeholder="username" required class="w-full rounded-lg shadow-sm focus:outline-none border border-gray-300 focus:ring-1 focus:border-indigo-500 focus:ring_indigo-500 mb-2" >
+            </div>
+            <div>
+              <label for="password" class="block text-2xl text-white mb-1">Password</label>
+              <input type="password" id="password" th:field="*{password}" placeholder="password" required class="w-full rounded-lg shadow-sm focus:outline-none border border-gray-300 focus:ring-1 focus:border-indigo-500 focus:ring_indigo-500 mb-2" >
+            </div>
+            <div class="mt-5">
+              <a th:action="@{/products}">
+                <button type="submit" class="w-full bg-violet-700 rounded-lg py-1 text-2xl text-white hover:bg-violet-600 active:bg-violet-700 focus:ring ">Login</button>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+  </body>
+</html>

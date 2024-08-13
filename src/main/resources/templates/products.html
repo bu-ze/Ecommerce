@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ecommerce</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-700">
+        <div class="container">
+            <h1 class="text-white font-bold text-3xl justify-centre flex align-centre flex-1 text-centre">Products</h1><br>
+        </div>
+        <!--cards-->
+        <main class="w-full min-h-screen gap-6 flex-wrap flex justify-center items-center">
+            <!--<h2 class="font-bold mt-12 p-3 text-white">New Products</h4>-->
+            <div class="w-80 p-2 bg-white rounded-xl transform transition-all hover:translate-y-2 duration-200 shadow-lg hover:shadow-2xl mt-6 mb-4 lg:mb-0">
+                <div>
+                    <img src="/static/imgs/table.jpg" class="h-auto object-cover rounded-xl" alt="Dining Table">
+                    <div class="p-2">
+                        <h3 class="font-bold text-lg">Dining Table</h3>
+                        <p class="text-sm text-gray-600">Made in Turkey</p>
+                    </div>
+                </div>
+                <div class="m-2">
+                    <a th:href="@{/payment}" role="button" class="bg-blue-600 text-white px-3 py-1 rounded-md hover:bg-blue-700 ">Buy</a>
+                </div>
+
+            </div>
+
+            <div class="w-60 p-2 bg-white rounded-xl transform transition-all hover:translate-y-2 duration-200 shadow-lg hover:shadow-2xl mt-6 mb-4 lg:mb-0">
+                <div>
+                    <img src="/static/imgs/chair.jpg" class="h-auto object-cover rounded-xl" alt="Chair">
+                    <div class="p-2">
+                        <h3 class="font-bold text-lg mb-2">Masaging chair</h3>
+                        <p class="text-sm text-gray-600">Made in Turkey</p>
+                    </div>
+                </div>
+                <div class="m-2">
+                    <a th:href="@{/payment}" role="button" class="bg-blue-600 text-white px-3 py-1 rounded-md hover:bg-blue-800 ">Buy</a>
+                </div>
+            </div>
+
+            <div class="w-80 p-2 bg-white rounded-xl transform transition-all hover:translate-y-2 duration-200 shadow-lg hover:shadow-2xl mt-6 mb-4 lg:mb-0">
+                <div>
+                    <img src="/static/imgs/sofa.jpg" class="h-auto object-cover rounded-xl" alt="Sofa">
+                    <div class="p-2">
+                        <h3 class="font-bold text-lg">Sofa</h3>
+                        <p class="text-sm text-gray-600">Made in Turkey</p>
+                    </div>
+                </div>
+                <div class="m-2">
+                    <a th:href="@{/payment}" role="button" class="bg-blue-600 text-white px-3 py-1 rounded-md hover:bg-blue-700 ">Buy</a>
+                </div>
+            </div>
+            <div class="w-80 p-2 bg-white rounded-xl transform transition-all hover:translate-y-2 duration-200 shadow-lg hover:shadow-2xl mt-6 mb-4 lg:mb-0">
+                <div>
+                    <img src="/static/imgs/bed.jpg" class="h-auto object-cover rounded-xl" alt="Bed">
+                    <div class="p-2">
+                        <h3 class="font-bold text-lg">Bed</h3>
+                        <p class="text-sm text-gray-600">Made in Turkey</p>
+                    </div>
+                </div>
+                <div class="m-2">
+                    <a th:href="@{/payment}" role="button" class="bg-blue-600 text-white px-3 py-1 rounded-md hover:bg-blue-700 ">Buy</a>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
